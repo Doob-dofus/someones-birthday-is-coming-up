@@ -2,17 +2,23 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <title>Pour Elé 💜 — 7 &amp; 8 novembre 2026</title>
 <meta name="description" content="Un week-end rien que pour toi." />
+<meta name="theme-color" content="#141017" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+<script src="art-1.js"></script>
+<script src="art-2.js"></script>
+<script src="art-3.js"></script>
 
 <button id="sound-toggle" aria-label="Activer le son" aria-pressed="false">♪</button>
+<div id="clock" aria-hidden="true"><span></span></div>
+<div id="progress" aria-hidden="true"><i></i></div>
 
 <!-- ═══════════ HERO ═══════════ -->
 <header id="hero">
@@ -43,114 +49,143 @@
   <p class="note-placeholder reveal">… ton mot doux ici …</p>
 </section>
 
-<!-- ═══════════ SAMEDI ═══════════ -->
-<section class="day" id="samedi">
-  <div class="day-head">
-    <p class="kicker reveal">Chapitre I</p>
-    <h2 class="reveal">Samedi 7 novembre</h2>
+<!-- ═══════════ CARTE 3D DU WEEK-END ═══════════ -->
+<section class="mapsec" data-len="460" aria-label="Carte du week-end">
+  <div class="stage">
+    <div class="map-cam"><div class="map-plane"><svg class="map-svg" viewBox="0 0 1200 1000" width="1200" height="1000" aria-hidden="true"><defs><pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M34 0H0V34" fill="none" stroke="#C9B6E4" stroke-opacity=".07" stroke-width="1.5"/></pattern><radialGradient id="mapglow" cx=".5" cy=".45" r=".6"><stop offset="0" stop-color="#2E2240"/><stop offset="1" stop-color="#141017"/></radialGradient></defs><rect width="1200" height="1000" rx="40" fill="url(#mapglow)"/><path d="M1185 419Q1198 475 1194 504Q1190 532 1176 559Q1161 585 1137 607Q1113 629 1083 646Q1054 664 1023 677Q992 690 962 701Q932 713 905 724Q877 736 850 748Q823 761 795 774Q767 787 736 797Q706 808 672 815Q639 822 604 823Q570 824 536 819Q501 814 469 805Q436 795 406 783Q375 771 346 756Q316 742 288 726Q260 710 234 692Q208 673 187 651Q165 629 150 604Q136 579 130 552Q124 525 126 498Q129 470 137 445Q145 419 156 395Q166 371 176 348Q186 325 193 302Q200 279 206 254Q212 229 220 203Q229 177 242 150Q256 124 278 101Q299 78 328 60Q357 43 391 32Q425 22 462 18Q498 14 534 15Q570 15 604 19Q639 22 672 26Q705 31 738 36Q770 41 802 49Q834 56 865 67Q895 78 922 93Q949 108 972 126Q996 145 1014 165Q1033 186 1050 208Q1066 229 1081 251Q1097 273 1112 295Q1128 318 1144 342Q1160 366 1172 392Q1185 419 1191 447L1198 475Z" fill="#221a2c" stroke="#C9A86A" stroke-opacity=".5" stroke-width="3" stroke-dasharray="10 9"/><path d="M1185 419Q1198 475 1194 504Q1190 532 1176 559Q1161 585 1137 607Q1113 629 1083 646Q1054 664 1023 677Q992 690 962 701Q932 713 905 724Q877 736 850 748Q823 761 795 774Q767 787 736 797Q706 808 672 815Q639 822 604 823Q570 824 536 819Q501 814 469 805Q436 795 406 783Q375 771 346 756Q316 742 288 726Q260 710 234 692Q208 673 187 651Q165 629 150 604Q136 579 130 552Q124 525 126 498Q129 470 137 445Q145 419 156 395Q166 371 176 348Q186 325 193 302Q200 279 206 254Q212 229 220 203Q229 177 242 150Q256 124 278 101Q299 78 328 60Q357 43 391 32Q425 22 462 18Q498 14 534 15Q570 15 604 19Q639 22 672 26Q705 31 738 36Q770 41 802 49Q834 56 865 67Q895 78 922 93Q949 108 972 126Q996 145 1014 165Q1033 186 1050 208Q1066 229 1081 251Q1097 273 1112 295Q1128 318 1144 342Q1160 366 1172 392Q1185 419 1191 447L1198 475Z" fill="url(#grid)"/><g fill="#5E4534" opacity=".55"><ellipse cx="482" cy="354" rx="44" ry="12" transform="rotate(-8 482 354)"/><ellipse cx="546" cy="517" rx="26" ry="22" transform="rotate(0 546 517)"/><ellipse cx="553" cy="744" rx="24" ry="18" transform="rotate(0 553 744)"/><ellipse cx="829" cy="189" rx="30" ry="22" transform="rotate(0 829 189)"/><ellipse cx="304" cy="428" rx="40" ry="12" transform="rotate(52 304 428)"/></g><path d="M53 566Q140 538 163 507Q187 476 212 452Q237 428 254 407Q271 387 299 370Q327 354 381 351Q436 349 465 369Q495 389 533 401Q571 413 592 428Q613 443 641 465Q669 486 694 507Q719 528 756 562Q793 595 831 637Q868 680 933 713L999 746" fill="none" stroke="#7B5EA7" stroke-width="20" stroke-linecap="round" opacity=".75"/><path d="M53 566Q140 538 163 507Q187 476 212 452Q237 428 254 407Q271 387 299 370Q327 354 381 351Q436 349 465 369Q495 389 533 401Q571 413 592 428Q613 443 641 465Q669 486 694 507Q719 528 756 562Q793 595 831 637Q868 680 933 713L999 746" fill="none" stroke="#C9B6E4" stroke-width="5" stroke-linecap="round" opacity=".6"/><text x="149" y="545" font-family="Cormorant Garamond,serif" font-style="italic" font-size="26" fill="#C9B6E4" opacity=".6">la Seine</text><g class="legs"><path class="leg sat" d="M499 658Q430 467 255 363"/><path class="leg sat" d="M255 363Q378 394 492 339"/><path class="leg sat" d="M492 339Q532 366 581 360"/><path class="leg sat" d="M581 360Q763 451 961 406"/><path class="leg sat" d="M961 406Q685 449 499 658"/><path class="leg sun" d="M499 658Q515 664 520 680"/><path class="leg sun" d="M520 680Q462 670 436 618"/><path class="leg sun" d="M436 618Q436 565 479 533"/><path class="leg sun" d="M479 533Q520 591 499 658"/></g><circle class="map-dot" r="9"/></svg><div class="bld" style="left:541px;top:170px;width:20px;height:18px;--h:39px"><i class="f-top"></i><i class="f-s"></i><i class="f-n"></i><i class="f-e"></i><i class="f-w"></i></div><div class="bld" style="left:685px;top:267px;width:19px;height:25px;--h:47px"><i class="f-top"></i><i class="f-s"></i><i class="f-n"></i><i class="f-e"></i><i class="f-w"></i></div><div class="bld" style="left:948px;top:640px;width:26px;height:24px;--h:24px"><i class="f-top"></i><i class="f-s"></i><i class="f-n"></i><i class="f-e"></i><i class="f-w"></i></div><div class="bld" style="left:857px;top:674px;width:29px;height:20px;--h:52px"><i class="f-top"></i><i class="f-s"></i><i class="f-n"></i><i class="f-e"></i><i class="f-w"></i></div><div class="bld" style="left:403px;top:237px;width:26px;height:20px;--h:49px"><i class="f-top"></i><i class="f-s"></i><i class="f-n"></i><i class="f-e"></i><i class="f-w"></i></div><div class="bld" style="left:352px;top:364px;width:27px;height:31px;--h:42px"><i class="f-top"></i><i class="f-s"></i><i class="f-n"></i><i class="f-e"></i><i class="f-w"></i></div><div class="bld" style="left:321px;top:278px;width:19px;height:20px;--h:16px"><i class="f-top"></i><i class="f-s"></i><i class="f-n"></i><i class="f-e"></i><i class="f-w"></i></div><div class="bld" style="left:657px;top:525px;width:28px;height:22px;--h:57px"><i class="f-top"></i><i class="f-s"></i><i class="f-n"></i><i class="f-e"></i><i class="f-w"></i></div><div class="bld" style="left:360px;top:514px;width:26px;height:23px;--h:36px"><i class="f-top"></i><i class="f-s"></i><i class="f-n"></i><i class="f-e"></i><i class="f-w"></i></div><div class="bld" style="left:579px;top:483px;width:24px;height:28px;--h:20px"><i class="f-top"></i><i class="f-s"></i><i class="f-n"></i><i class="f-e"></i><i class="f-w"></i></div><div class="bld" style="left:958px;top:569px;width:26px;height:25px;--h:21px"><i class="f-top"></i><i class="f-s"></i><i class="f-n"></i><i class="f-e"></i><i class="f-w"></i></div><div class="bld" style="left:480px;top:187px;width:32px;height:18px;--h:16px"><i class="f-top"></i><i class="f-s"></i><i class="f-n"></i><i class="f-e"></i><i class="f-w"></i></div><div class="bld" style="left:505px;top:118px;width:27px;height:28px;--h:15px"><i class="f-top"></i><i class="f-s"></i><i class="f-n"></i><i class="f-e"></i><i class="f-w"></i></div><div class="bld" style="left:313px;top:528px;width:20px;height:27px;--h:53px"><i class="f-top"></i><i class="f-s"></i><i class="f-n"></i><i class="f-e"></i><i class="f-w"></i></div><div class="bld" style="left:328px;top:623px;width:29px;height:27px;--h:50px"><i class="f-top"></i><i class="f-s"></i><i class="f-n"></i><i class="f-e"></i><i class="f-w"></i></div><div class="bld" style="left:630px;top:238px;width:19px;height:21px;--h:47px"><i class="f-top"></i><i class="f-s"></i><i class="f-n"></i><i class="f-e"></i><i class="f-w"></i></div><div class="bld" style="left:782px;top:203px;width:24px;height:25px;--h:42px"><i class="f-top"></i><i class="f-s"></i><i class="f-n"></i><i class="f-e"></i><i class="f-w"></i></div><div class="bld" style="left:555px;top:85px;width:31px;height:32px;--h:29px"><i class="f-top"></i><i class="f-s"></i><i class="f-n"></i><i class="f-e"></i><i class="f-w"></i></div><div class="bld" style="left:778px;top:367px;width:24px;height:33px;--h:26px"><i class="f-top"></i><i class="f-s"></i><i class="f-n"></i><i class="f-e"></i><i class="f-w"></i></div><div class="bld" style="left:387px;top:685px;width:22px;height:28px;--h:17px"><i class="f-top"></i><i class="f-s"></i><i class="f-n"></i><i class="f-e"></i><i class="f-w"></i></div><div class="bld" style="left:1007px;top:285px;width:21px;height:30px;--h:55px"><i class="f-top"></i><i class="f-s"></i><i class="f-n"></i><i class="f-e"></i><i class="f-w"></i></div><div class="bld" style="left:784px;top:628px;width:19px;height:33px;--h:38px"><i class="f-top"></i><i class="f-s"></i><i class="f-n"></i><i class="f-e"></i><i class="f-w"></i></div><div class="bld" style="left:814px;top:252px;width:30px;height:33px;--h:18px"><i class="f-top"></i><i class="f-s"></i><i class="f-n"></i><i class="f-e"></i><i class="f-w"></i></div><div class="bld" style="left:890px;top:253px;width:19px;height:23px;--h:58px"><i class="f-top"></i><i class="f-s"></i><i class="f-n"></i><i class="f-e"></i><i class="f-w"></i></div><div class="bld" style="left:766px;top:469px;width:30px;height:30px;--h:27px"><i class="f-top"></i><i class="f-s"></i><i class="f-n"></i><i class="f-e"></i><i class="f-w"></i></div><div class="bld" style="left:919px;top:211px;width:23px;height:18px;--h:53px"><i class="f-top"></i><i class="f-s"></i><i class="f-n"></i><i class="f-e"></i><i class="f-w"></i></div><div class="bld" style="left:994px;top:455px;width:24px;height:23px;--h:56px"><i class="f-top"></i><i class="f-s"></i><i class="f-n"></i><i class="f-e"></i><i class="f-w"></i></div><div class="bld" style="left:698px;top:624px;width:34px;height:32px;--h:15px"><i class="f-top"></i><i class="f-s"></i><i class="f-n"></i><i class="f-e"></i><i class="f-w"></i></div><div class="bld" style="left:243px;top:559px;width:21px;height:33px;--h:49px"><i class="f-top"></i><i class="f-s"></i><i class="f-n"></i><i class="f-e"></i><i class="f-w"></i></div><div class="bld" style="left:891px;top:435px;width:18px;height:27px;--h:36px"><i class="f-top"></i><i class="f-s"></i><i class="f-n"></i><i class="f-e"></i><i class="f-w"></i></div><div class="pin tower on" style="left:280px;top:402px"><div class="pin-in"><svg viewBox="0 0 60 120" width="34" height="68"><path d="M2 120Q22 90 26 40L29 0H31L34 40Q38 90 58 120H44Q30 96 16 120Z" fill="#C9A86A"/><path d="M18 72H42M23 44H37" stroke="#C9A86A" stroke-width="4"/></svg></div></div><div class="pin both home" data-leg="-1" style="left:499px;top:658px"><div class="pin-in"><span class="pin-label">Maison</span><span class="pin-stem"></span></div></div><div class="pin sat" data-leg="0" style="left:255px;top:363px"><div class="pin-in"><span class="pin-label">11h45 · Aquarium</span><span class="pin-stem"></span></div></div><div class="pin sat" data-leg="1" style="left:492px;top:339px"><div class="pin-in"><span class="pin-label">15h30 · Angelina</span><span class="pin-stem"></span></div></div><div class="pin sat" data-leg="2" style="left:581px;top:360px"><div class="pin-in"><span class="pin-label">17h · Bourse de Commerce</span><span class="pin-stem"></span></div></div><div class="pin sat" data-leg="3" style="left:961px;top:406px"><div class="pin-in"><span class="pin-label">20h30 · Peppe</span><span class="pin-stem"></span></div></div><div class="pin sun" data-leg="0" style="left:520px;top:680px"><div class="pin-in"><span class="pin-label">10h · Maison Binder</span><span class="pin-stem"></span></div></div><div class="pin sun" data-leg="1" style="left:436px;top:618px"><div class="pin-in"><span class="pin-label">14h · Céramicafé</span><span class="pin-stem"></span></div></div><div class="pin sun" data-leg="2" style="left:479px;top:533px"><div class="pin-in"><span class="pin-label">Ciné · UGC Montparnasse</span><span class="pin-stem"></span></div></div></div></div>
+    <div class="map-caption">
+      <p class="kicker">Le week-end, vu d'en haut</p>
+      <p class="map-title">Deux jours, <em>neuf adresses</em></p>
+      <p class="map-sub">Fais défiler : on trace la route.</p>
+    </div>
   </div>
+</section>
 
-  <article class="card reveal">
-    <figure class="flash-photo"><img src="assets/brunch-maison.jpg" alt="Petit-déjeuner au lit avec croissants et café" loading="lazy" /></figure>
-    <div class="card-body">
-      <p class="time">10h00</p>
+<!-- ═══════════ CHAPITRE I ═══════════ -->
+<section class="chapter">
+  <p class="kicker reveal">Chapitre I</p>
+  <h2 class="reveal">Samedi 7 novembre</h2>
+  <p class="chapter-sub reveal">Continue de faire défiler. Doucement.</p>
+</section>
+
+<section class="journey" data-len="3640" aria-label="Programme du samedi">
+  <div class="stage">
+  <!-- ── brunch ── -->
+  <div class="scene" id="sc-brunch" data-a="0" data-b="300" data-rest="150" data-clock="Samedi · 10h00" data-ca="0" data-ev="flash@25">
+    <div class="full photo" style="transform-origin:50% 50%" data-k="0 s1.22|300 s1"><img src="assets/brunch-maison.jpg" alt="Plateau de petit-déjeuner au lit, croissants et café" style="object-position:center" /></div><div class="full sweep" data-k="0 x-70|300 x70"></div><div class="panel" data-k="20 o0 y14|70 o1 y0|230 o1 y0|270 o0 y-8">
+      <p class="time">Samedi · 10h00</p>
       <h3>Brunch à la maison</h3>
       <p>On commence en douceur : croissants, café, et nulle part où être — juste nous deux.</p>
       <!-- ✏️ THÉO : mot doux (optionnel) -->
     </div>
-  </article>
-
-  <article class="card reveal">
-    <figure class="flash-photo"><img src="assets/aquarium.jpg" alt="Méduses lumineuses devant la Tour Eiffel" loading="lazy" /></figure>
-    <div class="card-body">
-      <p class="time">11h45 – 14h00</p>
+  </div>
+  <!-- ── paris ── -->
+  <div class="scene" id="sc-paris" data-a="230" data-b="730" data-k="230 o0|290 o1" data-ev="whoosh@400 whoosh@650">
+    <div class="full sky-noon"></div><div class="full "><div class="sun"></div></div><div class="vb " style="transform-origin:50% 50%" data-k="380 s1|700 s1.5"><svg viewBox="0 0 1000 1000" aria-hidden="true"><use href="#a-clouds"/></svg></div><div class="vb b " style="transform-origin:50% 90%" data-k="380 s1|560 s1.25 o1|640 o0"><svg viewBox="0 0 1000 1000" aria-hidden="true"><use href="#a-sky1"/></svg></div><div class="vb b tower" style="transform-origin:50% 90%" data-k="230 s.3|380 s.32|560 s1|720 s18|690 o1|725 o0"><svg viewBox="0 0 1000 1000" aria-hidden="true"><use href="#a-eiffel"/></svg></div><div class="vb b " style="transform-origin:50% 90%" data-k="380 s1 y0|520 s1.5 y40 o1|560 o0"><svg viewBox="0 0 1000 1000" aria-hidden="true"><use href="#a-sky2"/></svg></div><div class="vb b " style="transform-origin:50% 90%" data-k="380 s1 y0|500 s2 y70 o1|530 o0"><svg viewBox="0 0 1000 1000" aria-hidden="true"><use href="#a-sky3"/></svg></div><div class="cap" data-k="420 o0 y10|470 o1 y0|560 o1|600 o0 y-10"><p class="kicker">Samedi · 11h30</p><p class="cap-big">Direction le Trocadéro</p></div><div class="vb " style="transform-origin:50% 52%" data-k="350 s1|470 s11|440 o1|470 o0"><svg viewBox="0 0 1000 1000" aria-hidden="true"><use href="#a-window"/></svg><div class="leaf l" data-k="290 ry0|360 ry-100"><svg viewBox="0 0 200 740" aria-hidden="true"><use href="#a-wleaf"/></svg></div><div class="leaf r" data-k="290 ry0|360 ry100"><svg viewBox="0 0 200 740" aria-hidden="true"><use href="#a-wleaf"/></svg></div></div>
+  </div>
+  <!-- ── aquarium ── -->
+  <div class="scene" id="sc-aquarium" data-a="600" data-b="1180" data-k="600 c0|700 c150|1040 y0|1180 y100" data-rest="820" data-clock="Samedi · 11h45" data-ca="690" data-ev="flash@705 bubbles@710" data-o="500 900" data-al="b">
+    <div class="full photo" style="transform-origin:50% 50%" data-k="600 s1.35|1040 s1"><img src="assets/aquarium.jpg" alt="Méduses lumineuses dans un grand bassin" style="object-position:center" /></div><div class="full aqua-tint"></div><div class="full rays"><i></i><i></i><i></i><i></i></div><div class="full jl back" data-k="600 y25|1180 y-25"><div class="jelly" style="left:8%;top:20%;width:16vmin;animation-delay:-1s"><svg viewBox="0 0 200 320" aria-hidden="true"><use href="#a-jelly"/></svg></div><div class="jelly" style="left:70%;top:55%;width:13vmin;animation-delay:-3s"><svg viewBox="0 0 200 320" aria-hidden="true"><use href="#a-jelly"/></svg></div></div><div class="full jl mid" data-k="600 y60|1180 y-60"><div class="jelly" style="left:62%;top:10%;width:24vmin;animation-delay:-2s"><svg viewBox="0 0 200 320" aria-hidden="true"><use href="#a-jelly"/></svg></div><div class="jelly" style="left:14%;top:70%;width:20vmin;animation-delay:-4s"><svg viewBox="0 0 200 320" aria-hidden="true"><use href="#a-jelly"/></svg></div></div><div class="full jl front" data-k="600 y120|1180 y-140"><div class="jelly" style="left:-6%;top:35%;width:42vmin;animation-delay:-0s"><svg viewBox="0 0 200 320" aria-hidden="true"><use href="#a-jelly"/></svg></div></div><div class="full fx"><i class="bubble" style="left:13.4%;--s:1.26;animation-duration:11.3s;animation-delay:-3.3s"></i><i class="bubble" style="left:49.5%;--s:0.90;animation-duration:10.6s;animation-delay:-10.3s"></i><i class="bubble" style="left:9.4%;--s:0.53;animation-duration:11.9s;animation-delay:-5.6s"></i><i class="bubble" style="left:76.2%;--s:0.50;animation-duration:9.1s;animation-delay:-9.4s"></i><i class="bubble" style="left:22.9%;--s:1.35;animation-duration:12.3s;animation-delay:-0.4s"></i><i class="bubble" style="left:2.5%;--s:0.99;animation-duration:12.6s;animation-delay:-5.0s"></i><i class="bubble" style="left:21.7%;--s:0.88;animation-duration:6.2s;animation-delay:-2.9s"></i><i class="bubble" style="left:43.8%;--s:0.95;animation-duration:7.6s;animation-delay:-3.0s"></i><i class="bubble" style="left:21.9%;--s:0.91;animation-duration:8.0s;animation-delay:-0.3s"></i><i class="bubble" style="left:83.8%;--s:1.00;animation-duration:10.5s;animation-delay:-2.4s"></i><i class="bubble" style="left:99.3%;--s:1.27;animation-duration:6.8s;animation-delay:-4.3s"></i><i class="bubble" style="left:72.1%;--s:1.14;animation-duration:12.6s;animation-delay:-5.5s"></i><i class="bubble" style="left:83.0%;--s:1.10;animation-duration:8.1s;animation-delay:-7.6s"></i><i class="bubble" style="left:88.2%;--s:1.26;animation-duration:9.5s;animation-delay:-7.7s"></i><i class="bubble" style="left:3.5%;--s:0.72;animation-duration:11.6s;animation-delay:-5.4s"></i><i class="bubble" style="left:17.3%;--s:0.99;animation-duration:10.9s;animation-delay:-8.8s"></i><i class="bubble" style="left:37.5%;--s:0.90;animation-duration:9.6s;animation-delay:-10.1s"></i><i class="bubble" style="left:52.1%;--s:0.85;animation-duration:9.4s;animation-delay:-0.4s"></i><i class="bubble" style="left:4.3%;--s:1.13;animation-duration:12.9s;animation-delay:-7.7s"></i><i class="bubble" style="left:39.4%;--s:0.65;animation-duration:9.5s;animation-delay:-12.8s"></i><i class="bubble" style="left:77.1%;--s:0.99;animation-duration:12.0s;animation-delay:-3.0s"></i><i class="bubble" style="left:51.4%;--s:1.36;animation-duration:10.0s;animation-delay:-6.0s"></i></div><div class="panel" data-k="720 o0 y14|780 o1 y0|980 o1 y0|1030 o0 y-8">
+      <p class="time">Samedi · 11h45 – 14h00</p>
       <h3>Aquarium de Paris</h3>
-      <p>Requins, méduses et poissons-clowns au pied du Trocadéro. On prendra notre temps devant le grand bassin.</p>
-      <p class="detail">5 avenue Albert de Mun, 16ᵉ · billets réservés pour midi</p>
+      <p>Requins, méduses et poissons-clowns au pied du Trocadéro. On prendra notre temps devant le grand bassin.</p><p class="detail">5 avenue Albert de Mun, 16ᵉ · billets réservés pour midi</p>
     </div>
-  </article>
-
-  <article class="card reveal">
-    <figure class="flash-photo"><img src="assets/angelina.jpg" alt="Chocolat chaud et Mont-Blanc au salon de thé Angelina" loading="lazy" /></figure>
-    <div class="card-body">
-      <p class="time">15h30</p>
+  </div>
+  <!-- ── rivoli ── -->
+  <div class="scene" id="sc-rivoli" data-a="1040" data-b="1600" data-k="1040 y-100|1180 y0" data-ev="whoosh@1500">
+    <div class="full fog"></div><div class="vb b " style="transform-origin:50% 70%"><svg viewBox="0 0 1000 1000" aria-hidden="true"><use href="#a-floor"/></svg></div><div class="vb b arch" style="transform-origin:50% 70%" data-k="1190 s0.0596|1560 s10.486|1269.1 o1"><svg viewBox="0 0 1000 1000" aria-hidden="true"><use href="#a-shop"/></svg></div><div class="vb b arch" style="transform-origin:50% 70%" data-k="1190 s0.0954|1560 s16.777|1235.5 o1|1420.8 o1|1465.8 o0"><svg viewBox="0 0 1000 1000" aria-hidden="true"><use href="#a-arch"/></svg></div><div class="vb b arch" style="transform-origin:50% 70%" data-k="1190 s0.1526|1560 s26.844|1201.8 o1|1387.2 o1|1432.2 o0"><svg viewBox="0 0 1000 1000" aria-hidden="true"><use href="#a-arch"/></svg></div><div class="vb b arch" style="transform-origin:50% 70%" data-k="1190 s0.2441|1560 s42.950|1353.6 o1|1398.6 o0"><svg viewBox="0 0 1000 1000" aria-hidden="true"><use href="#a-arch"/></svg></div><div class="vb b arch" style="transform-origin:50% 70%" data-k="1190 s0.3906|1560 s68.719|1319.9 o1|1364.9 o0"><svg viewBox="0 0 1000 1000" aria-hidden="true"><use href="#a-arch"/></svg></div><div class="vb b arch" style="transform-origin:50% 70%" data-k="1190 s0.6250|1560 s109.951|1286.3 o1|1331.3 o0"><svg viewBox="0 0 1000 1000" aria-hidden="true"><use href="#a-arch"/></svg></div><div class="vb b arch" style="transform-origin:50% 70%" data-k="1190 s1.0000|1560 s175.922|1252.7 o1|1297.6 o0"><svg viewBox="0 0 1000 1000" aria-hidden="true"><use href="#a-arch"/></svg></div><div class="cap dark" data-k="1160 o0 y10|1210 o1 y0|1330 o1|1380 o0 y-10"><p class="kicker">Samedi · 15h15</p><p class="cap-big">Sous les arcades<br />de la rue de Rivoli</p></div><div class="surface"><svg viewBox="0 0 1000 100" aria-hidden="true" preserveAspectRatio="none"><use href="#a-surface"/></svg></div>
+  </div>
+  <!-- ── angelina ── -->
+  <div class="scene" id="sc-angelina" data-a="1480" data-b="1960" data-k="1480 c0|1580 c150" data-rest="1700" data-clock="Samedi · 15h30" data-ca="1560" data-ev="flash@1575" data-o="500 700" data-al="b">
+    <div class="full photo" style="transform-origin:50% 50%" data-k="1480 s1.3|1960 s1"><img src="assets/angelina.jpg" alt="Chocolat chaud et Mont-Blanc au salon de thé Angelina" style="object-position:center" /></div><div class="full warm-vignette"></div><div class="full steam"><i></i><i></i><i></i><i></i><i></i></div><div class="full fx"><i class="bokeh" style="left:95.6%;--s:1.35;animation-duration:6.4s;animation-delay:-1.1s"></i><i class="bokeh" style="left:83.5%;--s:1.16;animation-duration:10.7s;animation-delay:-4.0s"></i><i class="bokeh" style="left:60.6%;--s:1.05;animation-duration:10.1s;animation-delay:-2.1s"></i><i class="bokeh" style="left:43.1%;--s:0.85;animation-duration:11.1s;animation-delay:-12.9s"></i><i class="bokeh" style="left:94.9%;--s:0.99;animation-duration:9.1s;animation-delay:-3.5s"></i><i class="bokeh" style="left:3.6%;--s:0.52;animation-duration:9.3s;animation-delay:-4.1s"></i><i class="bokeh" style="left:38.0%;--s:1.30;animation-duration:9.7s;animation-delay:-7.3s"></i><i class="bokeh" style="left:23.6%;--s:0.52;animation-duration:8.3s;animation-delay:-1.8s"></i><i class="bokeh" style="left:51.0%;--s:1.40;animation-duration:10.7s;animation-delay:-2.4s"></i><i class="bokeh" style="left:89.4%;--s:1.22;animation-duration:11.1s;animation-delay:-11.8s"></i><i class="bokeh" style="left:76.3%;--s:1.21;animation-duration:8.5s;animation-delay:-12.8s"></i><i class="bokeh" style="left:96.2%;--s:0.65;animation-duration:11.3s;animation-delay:-9.3s"></i><i class="bokeh" style="left:46.1%;--s:0.98;animation-duration:9.4s;animation-delay:-12.0s"></i><i class="bokeh" style="left:50.1%;--s:1.25;animation-duration:8.5s;animation-delay:-11.5s"></i></div><div class="panel" data-k="1590 o0 y14|1640 o1 y0|1840 o1 y0|1880 o0 y-8">
+      <p class="time">Samedi · 15h30</p>
       <h3>Chocolat chaud chez Angelina</h3>
-      <p>Le fameux chocolat « à l'ancienne », rue de Rivoli. Il fera froid dehors ; on sera bien au chaud.</p>
-      <p class="detail">226 rue de Rivoli, 1ᵉʳ</p>
+      <p>Le fameux chocolat « à l'ancienne », rue de Rivoli. Il fera froid dehors ; on sera bien au chaud.</p><p class="detail">226 rue de Rivoli, 1ᵉʳ</p>
     </div>
-  </article>
-
-  <article class="card reveal">
-    <figure class="flash-photo"><img src="assets/bourse.jpg" alt="Rotonde de la Bourse de Commerce éclairée en nocturne" loading="lazy" /></figure>
-    <div class="card-body">
-      <p class="time">17h00</p>
+  </div>
+  <!-- ── tuileries ── -->
+  <div class="scene" id="sc-tuileries" data-a="1880" data-b="2470" data-k="1880 o0|1940 o1" data-ev="whoosh@2060">
+    <div class="vb vbimg" style="transform-origin:50.6% 61%" data-k="1990 s1|2420 s2.6"><img src="assets/tuileries.jpg" alt="Allée des Tuileries en automne au crépuscule" /></div><div class="full dusk" data-k="2150 o0|2400 o.75"></div><div class="full fx"><i class="leaf" style="left:23.8%;--s:0.99;animation-duration:8.6s;animation-delay:-7.9s"></i><i class="leaf" style="left:62.6%;--s:0.56;animation-duration:6.1s;animation-delay:-10.9s"></i><i class="leaf" style="left:25.9%;--s:0.71;animation-duration:13.0s;animation-delay:-6.1s"></i><i class="leaf" style="left:83.6%;--s:0.93;animation-duration:10.5s;animation-delay:-2.0s"></i><i class="leaf" style="left:63.5%;--s:1.28;animation-duration:9.7s;animation-delay:-9.6s"></i><i class="leaf" style="left:67.1%;--s:0.56;animation-duration:11.3s;animation-delay:-7.7s"></i><i class="leaf" style="left:30.1%;--s:0.53;animation-duration:12.1s;animation-delay:-6.1s"></i><i class="leaf" style="left:71.9%;--s:1.29;animation-duration:11.0s;animation-delay:-12.0s"></i><i class="leaf" style="left:39.5%;--s:1.22;animation-duration:9.1s;animation-delay:-12.2s"></i><i class="leaf" style="left:87.9%;--s:0.59;animation-duration:7.0s;animation-delay:-2.8s"></i><i class="leaf" style="left:96.5%;--s:0.89;animation-duration:10.4s;animation-delay:-3.9s"></i><i class="leaf" style="left:50.7%;--s:0.85;animation-duration:8.5s;animation-delay:-7.6s"></i><i class="leaf" style="left:58.4%;--s:1.31;animation-duration:10.8s;animation-delay:-12.1s"></i><i class="leaf" style="left:85.6%;--s:1.39;animation-duration:10.7s;animation-delay:-2.1s"></i><i class="leaf" style="left:86.1%;--s:1.37;animation-duration:12.3s;animation-delay:-7.4s"></i><i class="leaf" style="left:71.4%;--s:0.69;animation-duration:11.8s;animation-delay:-7.5s"></i><i class="leaf" style="left:28.5%;--s:0.56;animation-duration:12.0s;animation-delay:-12.9s"></i><i class="leaf" style="left:8.9%;--s:1.22;animation-duration:8.9s;animation-delay:-2.0s"></i></div><div class="vb b " style="transform-origin:50% 78%" data-k="1880 s.86|1990 s1|2130 s10|2100 o1|2135 o0"><svg viewBox="0 0 1000 1000" aria-hidden="true"><use href="#a-gate"/></svg><div class="leaf gl" data-k="1930 ry0|2000 ry-95"><svg viewBox="0 0 210 500" aria-hidden="true"><use href="#a-gleaf"/></svg></div><div class="leaf gr" data-k="1930 ry0|2000 ry95"><svg viewBox="0 0 210 500" aria-hidden="true"><use href="#a-gleaf2"/></svg></div></div><div class="cap" data-k="2050 o0 y10|2110 o1 y0|2250 o1|2300 o0 y-10"><p class="kicker">Samedi · 16h30</p><p class="cap-big">À travers les Tuileries</p></div>
+  </div>
+  <!-- ── bourse ── -->
+  <div class="scene" id="sc-bourse" data-a="2350" data-b="2860" data-k="2350 c0|2450 c150" data-rest="2600" data-clock="Samedi · 17h00" data-ca="2440" data-ev="flash@2455" data-o="506 610" data-al="c">
+    <div class="full photo" style="transform-origin:50% 50%" data-k="2350 s1.35|2860 s1"><img src="assets/bourse.jpg" alt="Rotonde de la Bourse de Commerce éclairée en nocturne" style="object-position:center" /></div><div class="full beams"><i></i><i></i><i></i></div><div class="panel" data-k="2470 o0 y14|2520 o1 y0|2740 o1 y0|2790 o0 y-8">
+      <p class="time">Samedi · 17h00</p>
       <h3>Nocturne à la Bourse de Commerce</h3>
-      <p>Premier samedi du mois : le musée nous ouvre ses portes gratuitement jusqu'à 21h. L'expo <em>Remember&nbsp;Me</em> sous la coupole, à la tombée de la nuit.</p>
-      <p class="detail">2 rue de Viarmes, 1ᵉʳ · entrée libre de 17h à 21h</p>
+      <p>Premier samedi du mois : le musée nous ouvre ses portes gratuitement jusqu'à 21h. L'expo <em>Remember&nbsp;Me</em> sous la coupole, à la tombée de la nuit.</p><p class="detail">2 rue de Viarmes, 1ᵉʳ · entrée libre de 17h à 21h</p>
     </div>
-  </article>
-
-  <article class="card reveal">
-    <figure class="flash-photo"><img src="assets/peppe.jpg" alt="Pizza napolitaine sur une table en bois sombre" loading="lazy" /></figure>
-    <div class="card-body">
-      <p class="time">20h30</p>
+  </div>
+  <!-- ── ride ── -->
+  <div class="scene" id="sc-ride" data-a="2780" data-b="3260" data-k="2780 o0|2840 o1" data-ev="whoosh@3190">
+    <div class="full night"></div><div class="full "><canvas class="streaks"></canvas></div><div class="cap" data-k="2840 o0 y10|2900 o1 y0|3000 o1|3050 o0 y-10"><p class="kicker">Samedi · 20h00</p><p class="cap-big">Direction le 20ᵉ</p></div><div class="vb b oven" style="transform-origin:50% 86%" data-k="2960 s.3|3120 s1|3240 s15" data-k2="2960 o0|3020 o1"><svg viewBox="0 0 1000 1000" aria-hidden="true"><use href="#a-oven"/></svg></div>
+  </div>
+  <!-- ── peppe ── -->
+  <div class="scene" id="sc-peppe" data-a="3180" data-b="3640" data-k="3180 c0|3280 c150" data-rest="3400" data-clock="Samedi · 20h30" data-ca="3260" data-ev="flash@3275" data-o="500 860" data-al="b">
+    <div class="full photo" style="transform-origin:50% 50%" data-k="3180 s1.3|3640 s1"><img src="assets/peppe.jpg" alt="Pizza napolitaine sortie du four" style="object-position:center" /></div><div class="full fx"><i class="ember" style="left:23.6%;--s:0.59;animation-duration:8.8s;animation-delay:-2.0s"></i><i class="ember" style="left:6.7%;--s:0.86;animation-duration:12.4s;animation-delay:-10.4s"></i><i class="ember" style="left:76.5%;--s:0.70;animation-duration:9.8s;animation-delay:-3.6s"></i><i class="ember" style="left:17.3%;--s:0.60;animation-duration:7.5s;animation-delay:-12.1s"></i><i class="ember" style="left:82.9%;--s:1.23;animation-duration:11.6s;animation-delay:-2.5s"></i><i class="ember" style="left:31.0%;--s:1.06;animation-duration:11.1s;animation-delay:-11.1s"></i><i class="ember" style="left:88.0%;--s:0.58;animation-duration:10.2s;animation-delay:-8.7s"></i><i class="ember" style="left:50.6%;--s:0.66;animation-duration:9.3s;animation-delay:-1.2s"></i><i class="ember" style="left:93.5%;--s:1.28;animation-duration:9.8s;animation-delay:-3.9s"></i><i class="ember" style="left:90.9%;--s:1.02;animation-duration:12.2s;animation-delay:-11.0s"></i><i class="ember" style="left:50.8%;--s:0.87;animation-duration:10.2s;animation-delay:-5.6s"></i><i class="ember" style="left:16.1%;--s:0.77;animation-duration:11.7s;animation-delay:-0.6s"></i><i class="ember" style="left:4.6%;--s:1.06;animation-duration:8.0s;animation-delay:-7.0s"></i><i class="ember" style="left:47.1%;--s:0.81;animation-duration:13.0s;animation-delay:-2.5s"></i><i class="ember" style="left:41.3%;--s:0.68;animation-duration:10.4s;animation-delay:-3.6s"></i><i class="ember" style="left:35.6%;--s:1.17;animation-duration:8.2s;animation-delay:-7.3s"></i><i class="ember" style="left:90.4%;--s:0.59;animation-duration:6.4s;animation-delay:-3.0s"></i><i class="ember" style="left:76.5%;--s:1.05;animation-duration:7.7s;animation-delay:-4.3s"></i><i class="ember" style="left:17.8%;--s:0.91;animation-duration:6.3s;animation-delay:-9.1s"></i><i class="ember" style="left:89.6%;--s:1.36;animation-duration:11.1s;animation-delay:-12.5s"></i><i class="ember" style="left:1.8%;--s:0.76;animation-duration:12.8s;animation-delay:-10.1s"></i><i class="ember" style="left:41.0%;--s:1.35;animation-duration:10.3s;animation-delay:-10.6s"></i><i class="ember" style="left:29.3%;--s:0.67;animation-duration:9.1s;animation-delay:-1.8s"></i><i class="ember" style="left:38.2%;--s:1.37;animation-duration:8.3s;animation-delay:-0.1s"></i><i class="ember" style="left:4.5%;--s:0.65;animation-duration:11.5s;animation-delay:-4.7s"></i><i class="ember" style="left:29.0%;--s:0.59;animation-duration:12.9s;animation-delay:-5.5s"></i></div><div class="panel" data-k="3270 o0 y14|3320 o1 y0">
+      <p class="time">Samedi · 20h30</p>
       <h3>Dîner chez Peppe</h3>
-      <p>Celle dont on parle depuis des mois : élue meilleure pizzeria d'Europe. J'ai réservé.</p>
-      <p class="detail">2 place Saint-Blaise, 20ᵉ</p>
+      <p>Oui, LA pizzeria dont on a parlé la semaine dernière. J'ai réservé.</p><p class="detail">2 place Saint-Blaise, 20ᵉ</p>
     </div>
-  </article>
+  </div>
+  </div>
 </section>
 
 <!-- ═══════════ INTERLUDE ═══════════ -->
 <section class="interlude">
-  <p class="reveal">«&nbsp;Et puis il y a les jours<br />qu'on n'oublie pas.&nbsp;»</p>
+  <div class="interlude-stars" aria-hidden="true"></div>
+  <p class="reveal">«&nbsp;Pour que ton week-end d'anniversaire ne soit pas un autre week-end Doob-dofus × Modern&nbsp;Family.&nbsp;»</p>
 </section>
 
-<!-- ═══════════ DIMANCHE ═══════════ -->
-<section class="day" id="dimanche">
-  <div class="day-head">
-    <p class="kicker reveal">Chapitre II</p>
-    <h2 class="reveal">Dimanche 8 novembre</h2>
+<!-- ═══════════ CHAPITRE II ═══════════ -->
+<section class="chapter dawn">
+  <p class="kicker reveal">Chapitre II</p>
+  <h2 class="reveal">Dimanche 8 novembre</h2>
+</section>
+
+<section class="journey" data-len="2220" aria-label="Programme du dimanche">
+  <div class="stage">
+  <!-- ── street1 ── -->
+  <div class="scene" id="sc-street1" data-a="0" data-b="320" data-ev="whoosh@250">
+    <div class="full sky-morning"></div><div class="full "><div class="sun morning"></div></div><div class="vb b " style="transform-origin:50% 92.5%" data-k="0 s.72|120 s1|300 s12|270 o1|300 o0"><svg viewBox="0 0 1000 1000" aria-hidden="true"><use href="#a-fac1"/></svg></div><div class="cap dark" data-k="20 o0 y10|70 o1 y0|160 o1|200 o0 y-10"><p class="kicker">Dimanche · 9h55</p><p class="cap-big">Rue Hallé, à deux pas</p></div>
   </div>
-
-  <article class="card reveal">
-    <figure class="flash-photo"><img src="assets/brunch-binder.jpg" alt="Brunch végétarien coloré dans un café parisien" loading="lazy" /></figure>
-    <div class="card-body">
-      <p class="time">10h00</p>
+  <!-- ── binder ── -->
+  <div class="scene" id="sc-binder" data-a="230" data-b="660" data-k="230 c0|320 c150" data-rest="440" data-clock="Dimanche · 10h00" data-ca="310" data-ev="flash@325" data-o="500 925" data-al="b">
+    <div class="full photo" style="transform-origin:50% 50%" data-k="230 s1.3|660 s1"><img src="assets/brunch-binder.jpg" alt="Brunch végétarien coloré dans un café parisien" style="object-position:center" /></div><div class="panel" data-k="330 o0 y14|380 o1 y0|560 o1 y0|600 o0 y-8">
+      <p class="time">Dimanche · 10h00</p>
       <h3>Brunch chez Maison Binder</h3>
-      <p>Un brunch végétarien fait maison, à deux pas de chez nous. Pour commencer la journée tout en couleurs.</p>
-      <p class="detail">43 rue Hallé, 14ᵉ</p>
+      <p>Un brunch végétarien fait maison, à deux pas de chez nous. Pour commencer la journée tout en couleurs.</p><p class="detail">43 rue Hallé, 14ᵉ</p>
     </div>
-  </article>
-
-  <article class="card reveal">
-    <figure class="flash-photo"><img src="assets/ceramique.jpg" alt="Mains peignant des céramiques dans un atelier" loading="lazy" /></figure>
-    <div class="card-body">
-      <p class="time">14h00</p>
+  </div>
+  <!-- ── street2 ── -->
+  <div class="scene" id="sc-street2" data-a="600" data-b="950" data-k="600 o0|650 o1" data-ev="whoosh@880">
+    <div class="full sky-morning"></div><div class="full "><div class="sun morning"></div></div><div class="vb b " style="transform-origin:50% 92.5%" data-k="600 x110|760 x0|790 s1|930 s12|900 o1|930 o0"><svg viewBox="0 0 1000 1000" aria-hidden="true"><use href="#a-fac2"/></svg></div><div class="vb b lamp" style="transform-origin:50% 100%" data-k="600 x170|800 x-120"><svg viewBox="0 0 1000 1000" aria-hidden="true"><use href="#a-lamp"/></svg></div><div class="cap dark" data-k="640 o0 y10|690 o1 y0|780 o1|820 o0 y-10"><p class="kicker">Dimanche · 13h50</p><p class="cap-big">Rue Raymond-Losserand</p></div>
+  </div>
+  <!-- ── ceramique ── -->
+  <div class="scene" id="sc-ceramique" data-a="860" data-b="1300" data-k="860 c0|950 c150" data-rest="1120" data-clock="Dimanche · 14h00" data-ca="940" data-ev="flash@955" data-o="500 925" data-al="b">
+    <div class="full photo" style="transform-origin:50% 50%" data-k="860 s1.3|1300 s1"><img src="assets/ceramique.jpg" alt="Mains autour de tasses en céramique peintes en lilas" style="object-position:center" /></div><div class="vb brush" style="transform-origin:50% 50%" data-k2="940 d0|1100 d1"><svg viewBox="0 0 1000 1000" aria-hidden="true"><path class="dash" pathLength="1" fill="none" stroke="#C9B6E4" stroke-opacity=".9" stroke-width="26" stroke-linecap="round" d="M-60 260C120 160 260 360 430 250S720 140 860 240S1000 300 1080 200"/><path class="dash" pathLength="1" fill="none" stroke="#C9A86A" stroke-opacity=".8" stroke-width="8" stroke-linecap="round" d="M-40 300C150 210 280 400 450 290S740 190 880 280S1020 330 1090 250"/></svg></div><div class="panel" data-k="960 o0 y14|1010 o1 y0|1200 o1 y0|1240 o0 y-8">
+      <p class="time">Dimanche · 14h00</p>
       <h3>Céramicafé Geneviève</h3>
-      <p>Deux tasses à peindre, un thé, et tout l'après-midi pour créer. On repartira chacun avec l'œuvre de l'autre.</p>
-      <p class="detail">42 rue Raymond-Losserand, 14ᵉ · atelier de 2h, sur réservation</p>
+      <p>Tu repartiras avec ma tasse, je repartirai avec la tienne. On ne jugera pas.</p><p class="detail">42 rue Raymond-Losserand, 14ᵉ · atelier de 2h, sur réservation</p>
     </div>
-  </article>
-
-  <article class="card reveal">
-    <figure class="flash-photo"><img src="assets/cinema.jpg" alt="Salle de cinéma plongée dans une lumière violette" loading="lazy" /></figure>
-    <div class="card-body">
-      <p class="time">Fin d'après-midi</p>
+  </div>
+  <!-- ── cinema ── -->
+  <div class="scene" id="sc-cinema" data-a="1240" data-b="1780" data-k="1240 o0|1300 o1" data-rest="1600" data-clock="Dimanche · 17h30" data-ca="1300" data-ev="curtain@1345">
+    <div class="full photo" style="transform-origin:50% 50%" data-k="1240 s1.25|1760 s1"><img src="assets/cinema.jpg" alt="Salle de cinéma plongée dans une lumière violette" style="object-position:center" /></div><div class="full screen-glow"></div><div class="full curtain cl" data-k="1340 x0|1480 x-100"></div><div class="full curtain cr" data-k="1340 x0|1480 x100"></div><div class="full valance" data-k="1300 y0|1500 y-100"></div><div class="panel" data-k="1490 o0 y14|1540 o1 y0|1700 o1 y0|1740 o0 y-8">
+      <p class="time">Dimanche · fin d'après-midi</p>
       <h3>Cinéma à Montparnasse</h3>
-      <p>Séance au creux du fauteuil, main dans la main, avant de rentrer tranquillement.</p>
-      <p class="detail">UGC Montparnasse, 83 boulevard du Montparnasse · film choisi ensemble</p>
+      <p>Séance au creux du fauteuil, main dans la main, avant de rentrer tranquillement.</p><p class="detail">UGC Montparnasse, 83 boulevard du Montparnasse · film choisi ensemble</p>
     </div>
-  </article>
-
-  <article class="card reveal">
-    <div class="card-body">
-      <p class="time">Le soir</p>
+  </div>
+  <!-- ── soir ── -->
+  <div class="scene" id="sc-soir" data-a="1720" data-b="2220" data-k="1720 o0|1780 o1" data-rest="2160" data-clock="Dimanche · le soir" data-ca="1780">
+    <div class="full night"></div><div class="vb " style="transform-origin:50% 50%"><svg viewBox="0 0 1000 1000" aria-hidden="true"><use href="#a-stars"/></svg></div><div class="full "><div class="moon"></div></div><div class="vb b " style="transform-origin:50% 35.7%" data-k="1760 s.75|1880 s1|2060 s11|2030 o1|2065 o0"><svg viewBox="0 0 1000 1000" aria-hidden="true"><use href="#a-fac3"/></svg></div><div class="full warm" data-k="2010 o0|2070 o1"></div><div class="panel" data-k="2070 o0 y14|2120 o1 y0">
+      <p class="time">Dimanche · le soir</p>
       <h3>Rien. Juste nous.</h3>
       <p>Retour à la maison, plaid, et le reste de la soirée rien qu'à nous.</p>
       <!-- ✏️ THÉO : mot doux (optionnel) -->
     </div>
-  </article>
+  </div>
+  </div>
 </section>
 
 <!-- ═══════════ FINAL ═══════════ -->
