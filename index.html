@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pour Elé 💜 — 7 &amp; 8 novembre 2026</title>
+<meta name="description" content="Un week-end rien que pour toi." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<button id="sound-toggle" aria-label="Activer le son" aria-pressed="false">♪</button>
+
+<!-- ═══════════ HERO ═══════════ -->
+<header id="hero">
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-veil" aria-hidden="true"></div>
+  <div class="hero-content">
+    <p class="hero-over reveal">7 &amp; 8 novembre 2026 · Paris</p>
+    <h1 class="reveal">Elé</h1>
+    <p class="hero-sub reveal">25 ans — un week-end rien que pour toi</p>
+    <div id="countdown" class="reveal" role="timer" aria-label="Décompte avant le week-end">
+      <div class="cd-cell"><span id="cd-d">–</span><em>jours</em></div>
+      <div class="cd-cell"><span id="cd-h">–</span><em>heures</em></div>
+      <div class="cd-cell"><span id="cd-m">–</span><em>min</em></div>
+      <div class="cd-cell"><span id="cd-s">–</span><em>sec</em></div>
+    </div>
+  </div>
+  <div class="scroll-hint" aria-hidden="true"><span></span></div>
+</header>
+
+<main>
+
+<!-- ═══════════ INTRO ═══════════ -->
+<section class="intro">
+  <p class="kicker reveal">Pour toi</p>
+  <p class="lead reveal">Deux jours. Une ville. Et tout ce que je n'ose pas toujours te dire.</p>
+  <!-- ✏️ THÉO : écris ici ton mot d'ouverture pour Elé -->
+  <p class="note-placeholder reveal">… ton mot doux ici …</p>
+</section>
+
+<!-- ═══════════ SAMEDI ═══════════ -->
+<section class="day" id="samedi">
+  <div class="day-head">
+    <p class="kicker reveal">Chapitre I</p>
+    <h2 class="reveal">Samedi 7 novembre</h2>
+  </div>
+
+  <article class="card reveal">
+    <figure class="flash-photo"><img src="assets/brunch-maison.jpg" alt="Petit-déjeuner au lit avec croissants et café" loading="lazy" /></figure>
+    <div class="card-body">
+      <p class="time">10h00</p>
+      <h3>Brunch à la maison</h3>
+      <p>On commence en douceur : croissants, café, et nulle part où être — juste nous deux.</p>
+      <!-- ✏️ THÉO : mot doux (optionnel) -->
+    </div>
+  </article>
+
+  <article class="card reveal">
+    <figure class="flash-photo"><img src="assets/aquarium.jpg" alt="Méduses lumineuses devant la Tour Eiffel" loading="lazy" /></figure>
+    <div class="card-body">
+      <p class="time">11h45 – 14h00</p>
+      <h3>Aquarium de Paris</h3>
+      <p>Requins, méduses et poissons-clowns au pied du Trocadéro. On prendra notre temps devant le grand bassin.</p>
+      <p class="detail">5 avenue Albert de Mun, 16ᵉ · billets réservés pour midi</p>
+    </div>
+  </article>
+
+  <article class="card reveal">
+    <figure class="flash-photo"><img src="assets/angelina.jpg" alt="Chocolat chaud et Mont-Blanc au salon de thé Angelina" loading="lazy" /></figure>
+    <div class="card-body">
+      <p class="time">15h30</p>
+      <h3>Chocolat chaud chez Angelina</h3>
+      <p>Le fameux chocolat « à l'ancienne », rue de Rivoli. Il fera froid dehors ; on sera bien au chaud.</p>
+      <p class="detail">226 rue de Rivoli, 1ᵉʳ</p>
+    </div>
+  </article>
+
+  <article class="card reveal">
+    <figure class="flash-photo"><img src="assets/bourse.jpg" alt="Rotonde de la Bourse de Commerce éclairée en nocturne" loading="lazy" /></figure>
+    <div class="card-body">
+      <p class="time">17h00</p>
+      <h3>Nocturne à la Bourse de Commerce</h3>
+      <p>Premier samedi du mois : le musée nous ouvre ses portes gratuitement jusqu'à 21h. L'expo <em>Remember&nbsp;Me</em> sous la coupole, à la tombée de la nuit.</p>
+      <p class="detail">2 rue de Viarmes, 1ᵉʳ · entrée libre de 17h à 21h</p>
+    </div>
+  </article>
+
+  <article class="card reveal">
+    <figure class="flash-photo"><img src="assets/peppe.jpg" alt="Pizza napolitaine sur une table en bois sombre" loading="lazy" /></figure>
+    <div class="card-body">
+      <p class="time">20h30</p>
+      <h3>Dîner chez Peppe</h3>
+      <p>Celle dont on parle depuis des mois : élue meilleure pizzeria d'Europe. J'ai réservé.</p>
+      <p class="detail">2 place Saint-Blaise, 20ᵉ</p>
+    </div>
+  </article>
+</section>
+
+<!-- ═══════════ INTERLUDE ═══════════ -->
+<section class="interlude">
+  <p class="reveal">«&nbsp;Et puis il y a les jours<br />qu'on n'oublie pas.&nbsp;»</p>
+</section>
+
+<!-- ═══════════ DIMANCHE ═══════════ -->
+<section class="day" id="dimanche">
+  <div class="day-head">
+    <p class="kicker reveal">Chapitre II</p>
+    <h2 class="reveal">Dimanche 8 novembre</h2>
+  </div>
+
+  <article class="card reveal">
+    <figure class="flash-photo"><img src="assets/brunch-binder.jpg" alt="Brunch végétarien coloré dans un café parisien" loading="lazy" /></figure>
+    <div class="card-body">
+      <p class="time">10h00</p>
+      <h3>Brunch chez Maison Binder</h3>
+      <p>Un brunch végétarien fait maison, à deux pas de chez nous. Pour commencer la journée tout en couleurs.</p>
+      <p class="detail">43 rue Hallé, 14ᵉ</p>
+    </div>
+  </article>
+
+  <article class="card reveal">
+    <figure class="flash-photo"><img src="assets/ceramique.jpg" alt="Mains peignant des céramiques dans un atelier" loading="lazy" /></figure>
+    <div class="card-body">
+      <p class="time">14h00</p>
+      <h3>Céramicafé Geneviève</h3>
+      <p>Deux tasses à peindre, un thé, et tout l'après-midi pour créer. On repartira chacun avec l'œuvre de l'autre.</p>
+      <p class="detail">42 rue Raymond-Losserand, 14ᵉ · atelier de 2h, sur réservation</p>
+    </div>
+  </article>
+
+  <article class="card reveal">
+    <figure class="flash-photo"><img src="assets/cinema.jpg" alt="Salle de cinéma plongée dans une lumière violette" loading="lazy" /></figure>
+    <div class="card-body">
+      <p class="time">Fin d'après-midi</p>
+      <h3>Cinéma à Montparnasse</h3>
+      <p>Séance au creux du fauteuil, main dans la main, avant de rentrer tranquillement.</p>
+      <p class="detail">UGC Montparnasse, 83 boulevard du Montparnasse · film choisi ensemble</p>
+    </div>
+  </article>
+
+  <article class="card reveal">
+    <div class="card-body">
+      <p class="time">Le soir</p>
+      <h3>Rien. Juste nous.</h3>
+      <p>Retour à la maison, plaid, et le reste de la soirée rien qu'à nous.</p>
+      <!-- ✏️ THÉO : mot doux (optionnel) -->
+    </div>
+  </article>
+</section>
+
+<!-- ═══════════ FINAL ═══════════ -->
+<section class="final">
+  <p class="kicker reveal">25 ans</p>
+  <h2 class="reveal">Joyeux anniversaire, Elé</h2>
+  <!-- ✏️ THÉO : écris ici ton mot de fin — le plus important -->
+  <p class="note-placeholder reveal">… ton mot de fin ici — le plus important …</p>
+</section>
+
+</main>
+
+<footer>
+  <p>Fait avec <span aria-label="amour">❤</span> par Théo</p>
+</footer>
+
+<div id="flash" aria-hidden="true"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
